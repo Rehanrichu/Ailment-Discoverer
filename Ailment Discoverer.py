@@ -1,6 +1,3 @@
-# Ailment Discoverer : Demo version
-# Developed by: Muhammed Rehan C.K.
-
 print("--- 🏥 AILMENT DISCOVERER: AI RESEARCH PROTOTYPE 🏥 ---")
 print("Answer 'yes' or 'no' to the following symptoms:\n")
 
@@ -20,9 +17,16 @@ mucous_stool = input("Is there excess mucous or blood in your stool? ").lower()
 internal_bleeding = input("Are there signs of internal bleeding or anemia? ").lower()
 muscular_pain = input("Do you have aching muscular pain? ").lower()
 itchy_skin = input("Do you have dry, scaly lesions or intense itching on skin? ").lower()
+sore_throat = input("Do you have a sore throat? ").lower()
+joint_pain = input("Do you have joint pain or swelling? ").lower()
+pain_behind_eyes = input("Do you have pain behind the eyes? ").lower()
+skin_rash = input("Do you have a skin rash? ").lower()
+itchy_skin = input("Do you have itchy skin? ").lower()
+swelling_limbs = input("Do you have swollen limbs? ").lower()
+body_pain = input("Do you have body pain? ").lower()
 
 print("\n--- 📋 DIAGNOSIS REPORT ---")
-
+# DISEASES SIMILAR TO SYMPTOMS
 
 # 1. Typhoid 
 if high_fever == "yes" and stomach_pain == "yes" and headache == "yes" and constipation == "yes":
@@ -44,10 +48,9 @@ if nasal_congestion == "yes" and sore_throat == "yes" and cough == "yes" and hig
     print("NCERT Note: It affects the nose and throat, but NOT the lungs.")
 
 # 4. Malaria
-if cyclic_fever == "yes" and chills == "yes" and fatigue == "yes":
-    print("📍 Possible Match: Malaria (Plasmodium vivax)")
-    print("What is it: A disease caused by a parasite transmitted by Anopheles mosquitoes.")
-    print("NCERT Note: Chills and high fever recur every 3 to 4 days.")
+if (cyclic_fever == "yes" or chills == "yes") and body_pain == "yes":
+    print("📍 Possible Match: Malaria (Plasmodium vivax/falciparum)")
+    print("NCERT Note: Chills and high fever recur every 3-4 days. Body pain is a key diagnostic feature.")
 
 # 5. Amoebiasis
 if mucous_stool == "yes" and stomach_pain == "yes" and constipation == "yes":
@@ -65,6 +68,24 @@ if internal_bleeding == "yes" and muscular_pain == "yes" and high_fever == "yes"
 if itchy_skin == "yes":
     print("📍 Possible Match: Ringworms (Microsporum/Trichophyton)")
     print("What is it: A fungal infection that causes dry, scaly skin lesions.")
+
+# 8. Elephantiasis / Filariasis
+if swelling_limbs == "yes":
+    print("📍 Possible Match: Elephantiasis (Wuchereria bancrofti)")
+    print("What is it: A helminthic disease affecting lymphatic vessels.")
+    print("NCERT Note: Causes chronic inflammation and massive swelling of lower limbs and genital organs.")
+
+# 9. Dengue
+if high_fever == "yes" and pain_behind_eyes == "yes" and skin_rash == "yes":
+    print("📍 Possible Match: Dengue Fever (Flavivirus)")
+    print("What is it: A viral disease spread by Aedes mosquitoes.")
+    print("NCERT Note: Known for sudden high fever, retro-orbital pain, and skin rashes.")
+
+# 10. Chikungunya
+if high_fever == "yes" and joint_pain == "yes" and fatigue == "yes":
+    print("📍 Possible Match: Chikungunya (Alphavirus)")
+    print("What is it: A viral infection spread by Aedes aegypti.")
+    print("NCERT Note: Characterized by debilitating and persistent joint pain.")
     
 
 print("\n---------------------------------------------------------")
