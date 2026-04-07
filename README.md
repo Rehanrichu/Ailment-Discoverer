@@ -23,5 +23,5 @@ Read the "Diagnosis Report" at the end to see potential matches.
 This have been updated with more dieases and symptoms
 
 ### MEDICAL DISCLAIMER
-This is an AI Research Prototype. The diagnosis can be TRUE or FALSE
-PLEASE GO AND CONSULT A DOCTOR (GP) FOR PROFESSIONAL ADVICE
+This is an AI Research Prototype. The diagnosis can be TRUE or FALSE.
+So just consult a doctor for more details.
