@@ -1,27 +1,23 @@
-# Ailment Discoverer
+# Ailment Discoverer 2.0: Machine Learning Diagnostic Engine
 
-### Description
-This is a diagnostic research prototype that uses Biology facts to identify illnesses. I built this using the "Human Health and Disease" chapters from the NCERT Class 12 textbook.
+**Developer:** Muhammed Rehan C.K  
+**Core Architecture:** Random Forest Classifier  
+**Primary Libraries:** Python, Pandas, NumPy, Scikit-Learn  
 
-### What it does:
-It asks you about 22 different symptoms, just answer it by yes or no.
+## Project Overview
+Ailment Discoverer 2.0 is a machine learning-based clinical diagnostic engine. Designed to move beyond basic conditional logic, this engine utilizes a Random Forest Classifier to analyze patient symptoms and output a probabilistic differential diagnosis for various infectious diseases (including Malaria, Dengue, and Typhoid). 
 
-The code knows the difference between bacterial, viral, protozoan, and fungal infections.
+This repository currently houses the Minimum Viable Product (CLI version), which demonstrates the core machine learning architecture, data pipelines, and probability generation before the planned frontend web deployment.
 
-Mainly help to identify the disease.
+## Technical Architecture
+* **Algorithm:** Random Forest Classifier (Scikit-Learn).
+* **Ensemble Learning:** The model is initialized with 100 decision trees (`n_estimators=100`) to mitigate overfitting and improve the generalization of the symptom data.
+* **Probability Mapping:** Instead of returning a single binary prediction, the engine utilizes the `predict_proba` function to generate a multi-class probability matrix. This mimics real-world clinical differential diagnosis reporting by outputting confidence percentages.
+* **Data Handling:** Pandas DataFrames are utilized to structure simulated clinical patient records, mapped against seven binary symptom features.
 
-All these symptoms and dieases are directly from the Biology textbook.
+## Local Installation and Execution
 
-
-### How to use it:
-Run the script.
-
-Answer each question with "yes" or "no".
-
-Read the "Diagnosis Report" at the end to see potential matches.
-
-This have been updated with more dieases and symptoms
-
-### MEDICAL DISCLAIMER
-This is an AI Research Prototype. The diagnosis can be TRUE or FALSE.
-So just consult a doctor for more details.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/yourusername/ailment-discoverer.git](https://github.com/yourusername/ailment-discoverer.git)
+   cd ailment-discoverer
