@@ -1,4 +1,4 @@
-# Ailment Discoverer 3.0
+# Ailment Discoverer
 
 An educational Python project that explores binary symptom features, Random Forest classification, input validation, dataset-quality checks, and evaluation on a small simulated dataset.
 
