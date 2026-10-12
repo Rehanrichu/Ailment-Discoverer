@@ -1,0 +1,16 @@
+high_fever,stomach_pain,headache,cough,chills,joint_pain,skin_rash,disease
+1,1,1,0,0,0,0,Typhoid
+1,1,1,0,0,0,0,Typhoid
+0,0,1,1,1,0,0,Common Cold
+1,0,1,0,1,1,0,Malaria
+0,1,0,0,0,0,0,Amoebiasis
+1,0,0,1,0,0,0,Pneumonia
+1,0,1,0,1,1,1,Dengue
+0,1,0,0,0,0,1,Ringworms
+1,0,1,0,1,1,0,Chikungunya
+1,1,1,0,0,0,0,Typhoid
+0,0,1,1,0,0,0,Common Cold
+0,0,0,1,0,0,1,Ringworms
+1,0,1,1,1,0,0,Pneumonia
+1,1,1,0,0,0,0,Typhoid
+1,0,1,0,1,1,1,Dengue
