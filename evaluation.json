@@ -1,0 +1,52 @@
+{
+  "quality": {
+    "n_rows": 15,
+    "n_symptoms": 7,
+    "n_diseases": 8,
+    "rows_per_disease_min": 1,
+    "rows_per_disease_max": 4,
+    "diseases_with_a_single_row": [
+      "Amoebiasis",
+      "Chikungunya",
+      "Malaria"
+    ],
+    "exact_duplicate_rows": 4,
+    "symptom_profiles_with_conflicting_labels": 1,
+    "warnings": [
+      "Fewer than 100 rows: any accuracy estimate will have a very wide confidence interval.",
+      "Diseases with one example cannot be learned or tested fairly (nothing left to train on once that row is held out).",
+      "Exact duplicate rows leak between training and test sets and inflate accuracy.",
+      "Identical symptom patterns carry different disease labels; no model can get both right."
+    ]
+  },
+  "evaluation": {
+    "method": "leave-one-out",
+    "n": 15,
+    "top1_accuracy": 0.533,
+    "top1_ci95": [
+      0.301,
+      0.752
+    ],
+    "top3_accuracy": 0.8,
+    "top3_ci95": [
+      0.548,
+      0.93
+    ],
+    "majority_class_baseline": 0.267
+  },
+  "evaluation_deduplicated": {
+    "method": "leave-one-out",
+    "n": 11,
+    "top1_accuracy": 0.182,
+    "top1_ci95": [
+      0.051,
+      0.477
+    ],
+    "top3_accuracy": 0.545,
+    "top3_ci95": [
+      0.28,
+      0.787
+    ],
+    "majority_class_baseline": 0.182
+  }
+}
